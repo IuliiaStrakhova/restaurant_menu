@@ -86,24 +86,24 @@
     <section>
         <h2 id="order-form">Place Your Order</h2>
         <form>
-            Roasted chicken with rosemary <input id="chicken" type="number" min="1">
+            <label for="chicken">Roasted chicken with rosemary</label><input id="chicken" type="number" min="1">
                 <h3>Side dishes:</h3>
-                <input type="checkbox"><label for="chicken">Rice</label><br>
-                <input type="checkbox"><label for="chicken">Mashed potato</label><br>
-                <input type="checkbox"><label for="chicken">Baby potatoes</label><br>
-                <input type="checkbox"><label for="chicken">Salad</label><br>
+                <input type="checkbox" id="rice"><label for="rice">Rice</label><br>
+                <input type="checkbox" id="mashed-potato"><label for="mashed-potato">Mashed potato</label><br>
+                <input type="checkbox" id="baby-potatoes"><label for="baby-potatoes">Baby potatoes</label><br>
+                <input type="checkbox" id="caesar-salad"><label for="caesar-salad">Salad</label><br>
             <br/>
-            Caesar salad <input id="salad" type="number" min="1">
+            <label for="salad">Caesar salad</label><input id="salad" type="number" min="1">
                 <h3>Options:</h3>
-                <input type="radio" name="salad"><label for="salad"> Shrimps</label><br>
-                <input type="radio" name="salad"><label for="salad"> More parmesan</label><br>
-                <input type="radio" name="salad"><label for="salad"> Vegan</label><br>
-            <br/>
-            Cheesecake Boston
+                <input type="radio" name="salad" id="shrimps"><label for="shrimps"> Shrimps</label><br>
+                <input type="radio" name="salad" id="more-parmesan"><label for="more-parmesan"> More parmesan</label><br>
+                <input type="radio" name="salad" id="vegan"><label for="vegan"> Vegan</label><br>
+            <br/><label for="dessert">
+            Cheesecake Boston</label>
                 <input id="dessert" type="number" min="1">
                 <h3>Options:</h3>
-                <input type="radio" name="cheesecake"><label for="dessert"> Piece</label><br>
-                <input type="radio" name="cheesecake"><label for="dessert"> Whole cake</label><br>
+                <input type="radio" name="cheesecake" id="piece"><label for="piece"> Piece</label><br>
+                <input type="radio" name="cheesecake" id="whole-cake"><label for="whole-cake"> Whole cake</label><br>
                 <textarea id="data-entry" rows="7" cols="30" placeholder="add special requests for cake here:"></textarea>
             <br/>
             <input type="submit" value="Go To Checkout">
